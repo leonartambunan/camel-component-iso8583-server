@@ -14,6 +14,12 @@ ISO8583 Server as Camel Component
 
 ## How to Use
 
+### ISO8583 Specification
+
+Put your j8583 xml spec in the root of Java class loader (usually as src/main/resources/iso8583server.xml)
+
+### Code
+
 ```java
 
 
