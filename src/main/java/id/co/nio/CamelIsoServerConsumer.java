@@ -72,6 +72,7 @@ public class CamelIsoServerConsumer extends DefaultConsumer {
                 ConfigParser.configureFromUrl(mf, specUrl);
             }
 
+
             J8583MessageFactory messageFactory = new J8583MessageFactory<>(mf, ISO8583Version.V1987);// [1]
 
             ServerConfiguration serverConfiguration = ServerConfiguration.newBuilder()

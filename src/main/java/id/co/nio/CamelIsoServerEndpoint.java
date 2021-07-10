@@ -33,7 +33,7 @@ public class CamelIsoServerEndpoint extends DefaultEndpoint {
     }
 
     public Producer createProducer() throws Exception {
-        return new CamelIsoServerProducer(this);
+        return null;
     }
 
     public Consumer createConsumer(Processor processor) throws Exception {
