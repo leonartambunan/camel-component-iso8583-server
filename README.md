@@ -39,6 +39,7 @@ from("iso8583server:7001")
          ConfigParser.configureFromClasspathConfig(mf, "iso8583server.xml");
          J8583MessageFactory messageFactory = new J8583MessageFactory<>(mf, ISO8583Version.V1987);// [1]
          IsoMessage response = messageFactory.createResponse(data);
+         //your main process here
          response.setField(39,new IsoValue(IsoType.ALPHA,"00",2));
          exchange.getMessage().setBody(response);
    }
